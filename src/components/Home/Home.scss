@@ -1,0 +1,97 @@
+.home {
+    padding: 5rem;
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: flex-start;
+        padding: 2rem;
+        padding-top: 7rem;
+
+        .image {
+            img {
+                border-radius: 10px;
+                border: 1px solid lightslategrey;
+                margin-left: 2rem;
+                width: 25rem;
+                animation: imgAnimate 1s ease-in-out infinite alternate;
+            }
+
+            @keyframes imgAnimate {
+                to {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+        .text {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 0.3rem;
+            }
+            a {
+                margin-top: 10px;
+                width: fit-content;
+                button {
+                    display: flex;
+                    align-items: center;
+                    background-color: #ff5c35;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: bold;
+                    gap: 8px;
+                    padding: 0.5rem 0.7rem;
+                    font-size: 1.2rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .card {
+                display: flex;
+                border: 1px solid lightslategrey;
+                border-radius: 6px;
+                flex-direction: column;
+                padding: 10px;
+                text-align: center;
+                width: 17rem;
+                img {
+                    margin: auto;
+                    width: 10rem;
+                    height: 10rem;
+                }
+                a{
+                    padding: 5px 10px;
+                    background: #ff5c35;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    border-radius: 3px;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
