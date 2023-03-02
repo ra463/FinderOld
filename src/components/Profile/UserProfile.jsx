@@ -23,17 +23,17 @@ const UserProfile = () => {
         <div className="sidebar">
           <div className="upper">Finder</div>
           <div className="lower">
+          <div
+            onClick={() => setDisplay(1)}
+            className={dispaly === 1 ? "active" : ""}
+            >
+              <CgNotes /> Submit Report
+            </div>
             <div
               onClick={() => setDisplay(0)}
               className={dispaly === 0 ? "active" : ""}
             >
               <MdOutlineDashboard /> Dashboard
-            </div>
-            <div
-            onClick={() => setDisplay(1)}
-            className={dispaly === 1 ? "active" : ""}
-            >
-              <CgNotes /> Submit Report
             </div>
             <div
               // onClick={() => setDisplay(1)}
